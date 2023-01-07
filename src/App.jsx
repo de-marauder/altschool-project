@@ -1,11 +1,9 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 const hostname = import.meta.env.VITE_HOSTNAME
 
 function App() {
-  const [count, setCount] = useState(0)
   console.log(hostname)
 
   return (
@@ -20,13 +18,7 @@ function App() {
       </div>
       <h1>{hostname}</h1>
       <div className="card">
-        <p></p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <h2>Project by de-marauder</h2>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
